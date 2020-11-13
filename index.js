@@ -1,2 +1,2 @@
 exports.Connection = require('./lib/connection');
-exports.ismg = require('./lib/ismg');
+exports.Ismg = require('./lib/ismg');

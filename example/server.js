@@ -1,4 +1,4 @@
-const ISMG = require('../index').ismg;
+const ISMG = require('../index').Ismg;
 const port = 7890;
 
 const ismg = new ISMG();
