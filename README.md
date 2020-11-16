@@ -36,10 +36,10 @@ ISMG 实例方法
     ```javascript
     // 支持返回一个 Promise
     async function authentication({
-      Source_Addr,         /* 源地址，此处为 SP_Id，即 SP 的企业代码，（客户端提供） */
-      AuthenticatorSource, /* 用于鉴别源地址（客户端提供） */
-      Timestamp,           /* 格式: MMDDHHmmss（客户端提供） */
-      Host,                /* 用于鉴定 IP 有效性（当前客户端） */
+      Source_Addr,         /* @param {string} 源地址，此处为 SP_Id，即 SP 的企业代码，（客户端提供） */
+      AuthenticatorSource, /* @param {buffer} 用于鉴别源地址（客户端提供） */
+      Timestamp,           /* @param {number} 格式: MMDDHHmmss（客户端提供） */
+      remoteAddress,       /* @param {string} 用于鉴定 IP 有效性（当前客户端） */
     }) {
       // DIY: calculate Status and AuthenicatorISMG
 
